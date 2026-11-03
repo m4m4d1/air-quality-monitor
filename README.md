@@ -45,7 +45,7 @@ Verify the breakpoints against the regulation before official use.
 ## Roadmap this week
 
 - [x] Mon: scaffold, stations and data model
-- [ ] Tue: sensor data simulator and storage
+- [x] Tue: sensor data simulator and storage
 - [ ] Wed: REST API, ISPU index and alerts
 - [ ] Thu: dashboard
 - [ ] Fri: map and alerts panel
