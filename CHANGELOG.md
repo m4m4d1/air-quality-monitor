@@ -2,6 +2,9 @@
 
 ## Unreleased
 
+- REST API: stations, history, summary, alerts and a sensor ingest endpoint (`/docs` for details).
+- ISPU index: rolling averages, breakpoint interpolation, dominant pollutant, health advice and
+  alert episodes from Tidak Sehat upwards.
 - Sensor data simulator with rush hours, night inversions, rubbish burning and dry-season haze,
   and SQLite storage (`python -m app.simulator --hours 72`).
 - Project scaffold, 12 monitoring stations and the air quality data model (ISPU breakpoints,
