@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="en" data-lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Air Quality Monitoring System · Indonesia</title>
+<meta name="description" content="Air quality monitoring for Indonesian cities: ISPU index, health advice, alerts and a live dashboard.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;700;800&family=JetBrains+Mono:wght@500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="top">
+  <div class="top-inner">
+    <div class="logo" aria-hidden="true">∿</div>
+    <div class="title">
+      <h1><span class="t-en">Air Quality Monitoring System</span><span class="t-id">Sistem Pemantauan Kualitas Udara</span></h1>
+      <p><span class="t-en">Indonesian cities · ISPU index (PermenLHK P.14/2020)</span><span class="t-id">Kota-kota Indonesia · Indeks ISPU (PermenLHK P.14/2020)</span></p>
+    </div>
+    <div class="top-right">
+      <span class="pill demo-pill"><span class="t-en">Demo · simulated data</span><span class="t-id">Demo · data simulasi</span></span>
+      <span class="pill" id="updated">…</span>
+      <button class="lang" type="button" aria-label="Switch language"><span data-l="en">EN</span><span data-l="id">ID</span></button>
+    </div>
+  </div>
+</header>
+
+<main>
+  <section class="kpis" id="kpis" aria-label="Summary"></section>
+
+  <section class="grid">
+    <div class="panel">
+      <h2><span class="t-en">Stations</span><span class="t-id">Stasiun</span><span class="muted"><span class="t-en">click a row for details</span><span class="t-id">klik baris untuk detail</span></span></h2>
+      <div class="table-wrap">
+        <table>
+          <thead><tr>
+            <th><span class="t-en">Station</span><span class="t-id">Stasiun</span></th>
+            <th><span class="t-en">City</span><span class="t-id">Kota</span></th>
+            <th><span class="t-en">Category</span><span class="t-id">Kategori</span></th>
+            <th class="num">ISPU</th>
+            <th><span class="t-en">Dominant</span><span class="t-id">Dominan</span></th>
+            <th class="num">PM2.5</th>
+            <th class="num">PM10</th>
+          </tr></thead>
+          <tbody id="station-rows"></tbody>
+        </table>
+      </div>
+      <p class="note"><span class="t-en">PM2.5 and PM10 are 24-hour averages in µg/m³.</span><span class="t-id">PM2.5 dan PM10 adalah rata-rata 24 jam dalam µg/m³.</span></p>
+    </div>
+
+    <div class="panel" id="detail">
+      <div class="detail-head">
+        <div>
+          <h3 id="d-name">…</h3>
+          <div class="muted" id="d-where"></div>
+          <div id="d-status"></div>
+        </div>
+        <div class="big-index"><b id="d-index">–</b><div class="muted">ISPU</div></div>
+      </div>
+      <div class="advice" id="d-advice"></div>
+      <div class="params" id="d-params"></div>
+      <div class="chart-box"><canvas id="d-chart" aria-label="Last 72 hours"></canvas></div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <span class="t-en">ISPU per PermenLHK P.14/MENLHK/SETJEN/KUM.1/7/2020; verify breakpoints before official use. Open source (MIT).</span>
+  <span class="t-id">ISPU sesuai PermenLHK P.14/MENLHK/SETJEN/KUM.1/7/2020; periksa batas sebelum dipakai secara resmi. Sumber terbuka (MIT).</span>
+  <a href="https://github.com/m4m4d1/air-quality-monitor">GitHub</a>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.1/dist/chart.umd.min.js"></script>
+<script src="app.js"></script>
+</body>
+</html>

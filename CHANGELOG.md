@@ -2,6 +2,8 @@
 
 ## Unreleased
 
+- Bilingual (EN/ID) dashboard: summary, station table, station detail with health advice and
+  72-hour chart.
 - REST API: stations, history, summary, alerts and a sensor ingest endpoint (`/docs` for details).
 - ISPU index: rolling averages, breakpoint interpolation, dominant pollutant, health advice and
   alert episodes from Tidak Sehat upwards.
