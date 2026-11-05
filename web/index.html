@@ -8,6 +8,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;700;800&family=JetBrains+Mono:wght@500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" crossorigin="">
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -63,6 +64,18 @@
       <div class="chart-box"><canvas id="d-chart" aria-label="Last 72 hours"></canvas></div>
     </div>
   </section>
+  <section class="grid">
+    <div class="panel">
+      <h2><span class="t-en">Map</span><span class="t-id">Peta</span><span class="muted"><span class="t-en">colour = ISPU category</span><span class="t-id">warna = kategori ISPU</span></span></h2>
+      <div id="map" class="map" role="img" aria-label="Map of monitoring stations"></div>
+      <div class="legend" id="legend"></div>
+    </div>
+    <div class="panel">
+      <h2><span class="t-en">Alerts, last 24 hours</span><span class="t-id">Peringatan, 24 jam terakhir</span><span class="muted" id="alert-count"></span></h2>
+      <p class="note alerts-note"><span class="t-en">Episodes at Unhealthy (ISPU above 100) or worse.</span><span class="t-id">Episode Tidak Sehat (ISPU di atas 100) atau lebih buruk.</span></p>
+      <ul class="alerts" id="alerts"></ul>
+    </div>
+  </section>
 </main>
 
 <footer>
@@ -72,6 +85,8 @@
 </footer>
 
 <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.1/dist/chart.umd.min.js"></script>
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" crossorigin=""></script>
 <script src="app.js"></script>
+<script src="map.js"></script>
 </body>
 </html>

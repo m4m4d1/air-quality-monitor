@@ -2,6 +2,7 @@
 
 ## Unreleased
 
+- Station map (colour by ISPU category) and a 24-hour alerts panel linked to the station detail.
 - Bilingual (EN/ID) dashboard: summary, station table, station detail with health advice and
   72-hour chart.
 - REST API: stations, history, summary, alerts and a sensor ingest endpoint (`/docs` for details).

@@ -48,7 +48,7 @@ Verify the breakpoints against the regulation before official use.
 - [x] Tue: sensor data simulator and storage
 - [x] Wed: REST API, ISPU index and alerts
 - [x] Thu: dashboard
-- [ ] Fri: map and alerts panel
+- [x] Fri: map and alerts panel
 - [ ] Sat: Docker, tests and documentation
 - [ ] Sun: live demo and v1.0 release
 
