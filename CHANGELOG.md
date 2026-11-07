@@ -1,7 +1,10 @@
 # Changelog
 
-## Unreleased
+## 1.0.0
 
+First release.
+
+- Live demo on GitHub Pages, built from a static snapshot of the API (`python -m app.export_demo`).
 - Dockerfile, tests for the sensor ingest endpoint and API key, and full documentation.
 - Station map (colour by ISPU category) and a 24-hour alerts panel linked to the station detail.
 - Bilingual (EN/ID) dashboard: summary, station table, station detail with health advice and

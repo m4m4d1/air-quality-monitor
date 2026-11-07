@@ -10,6 +10,8 @@ air becomes unhealthy.
 > Week 2 of Nusantara Intel: one new open-source
 > information system for Indonesia every week, built in public one step per day.
 
+**Live demo:** https://m4m4d1.github.io/air-quality-monitor/ (simulated data)
+
 ## Features
 
 - **12 stations**: five in Jakarta at the locations of the city's ISPU stations (Bundaran HI,
@@ -123,7 +125,7 @@ transcribed from PermenLHK P.14/2020 for this project; verify them against the r
 official use. For real air quality in Indonesia see the official ISPU publications of KLHK and
 the provincial environment agencies.
 
-## Roadmap this week
+## Built this week
 
 - [x] Mon: scaffold, stations and data model
 - [x] Tue: sensor data simulator and storage
@@ -131,7 +133,7 @@ the provincial environment agencies.
 - [x] Thu: dashboard
 - [x] Fri: map and alerts panel
 - [x] Sat: Docker, tests and documentation
-- [ ] Sun: live demo and v1.0 release
+- [x] Sun: live demo and v1.0 release
 
 ## License
 
